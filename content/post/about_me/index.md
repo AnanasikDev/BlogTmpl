@@ -2,7 +2,7 @@
 title: Hi there👋
 description: I am AnanSeek4Jam - a young enthusiast with passion for game development, programming and art
 slug: about_me
-date: 2021-18-06
+date: 2021-06-18
 image: cover.jpg
 categories:
 tags:

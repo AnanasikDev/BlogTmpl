@@ -3,10 +3,11 @@ title: 3D models to real life figures
 description: I made a cardboard figure using Blender
 slug: 3d_to_real_life
 date: 2025-08-13
-image: cover.jpg
+image: images/cover.jpg
 categories:
 tags:
-    - 3d
+    - 3D
+    - Blender
 ---
 
 # 3D models to real life figures
