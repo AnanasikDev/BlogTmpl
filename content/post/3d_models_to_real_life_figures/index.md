@@ -5,6 +5,7 @@ slug: 3d_to_real_life
 date: "2025-08-13"
 image: images/cover.jpg
 categories:
+coverHeight: full
 tags:
     - 3D
     - Blender
