@@ -20,6 +20,12 @@ jobs:
               with:
                   fetch-depth: 0
 
+            - name: Checkout theme fork
+              uses: actions/checkout@v4
+              with:
+              repository: AnanasikDev/hugo-theme-stack
+              path: stack-theme-fork # <-- Place it in a folder with this name
+
             - name: Cache Hugo resources
               uses: actions/cache@v4
               env:
