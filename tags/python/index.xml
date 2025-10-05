@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on AnanaSeek4Jam</title><link>https://demo.stack.jimmycai.com/tags/python/</link><description>Recent content in Python on AnanaSeek4Jam</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 20 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://demo.stack.jimmycai.com/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>How I made my own steering wheel using only my laptop</title><link>https://demo.stack.jimmycai.com/p/no_hardware_racing_setup/</link><pubDate>Wed, 20 Nov 2024 00:00:00 +0000</pubDate><guid>https://demo.stack.jimmycai.com/p/no_hardware_racing_setup/</guid><description>&lt;h1 id="software-driven-devices-in-gaming"&gt;Software-Driven Devices in gaming
+&lt;/h1&gt;&lt;p&gt;In this essay, I want to discuss opportunities that computer vision (possibly in combination with other inputs) provides in gaming, how it can be implemented, describe several approaches to it and their benefits, and discuss the theoretical future of this technology.&lt;/p&gt;
+&lt;p&gt;My idea revolves around eliminating additional hardware accessories, leaving only a laptop, phone or tablet which are non-specific to gaming. Depending on the desired result, one may make marker-devices (MD for short) which are physical attributes one can use to play games.&lt;/p&gt;
+&lt;h3 id="why"&gt;Why?
+&lt;/h3&gt;&lt;p&gt;Hardware is expensive, inconvenient in transportation, difficult in distribution and modification, and barely sustainable in home conditions. In contrast, Software-Driven Devices (SDD for short) can be made at home; their price consists only of the cost of materials; and they are highly customizable.&lt;/p&gt;
+&lt;h2 id="racing-setup"&gt;Racing setup
+&lt;/h2&gt;&lt;h3 id="what"&gt;What?
+&lt;/h3&gt;&lt;p&gt;The term &amp;ldquo;racing setup&amp;rdquo; here refers to devices one needs to play racing video games. Racing setups usually include a steering wheel, two or three pedals, and, in more expensive models, also gearbox, turn signals and other car controls. The most important parts of it that I will cover more profoundly in this essay are steering wheel and gas and brake pedals.&lt;/p&gt;
+&lt;h3 id="how"&gt;How?
+&lt;/h3&gt;&lt;p&gt;Generally, the idea behind SDD is in utilizing computer vision (through camera) as the only (or, at least, primary) source of input for a computer, eliminating need in any classical, hardware-driven-devices.&lt;/p&gt;
+&lt;h4 id="steering-wheel"&gt;Steering wheel
+&lt;/h4&gt;&lt;p&gt;The steering wheel has only one key property - angle. It can easily be detected by using special colored markers on the wheel for software to detect their positions and movement. By using several (at least three, theoretically) markers of different colors, sizes, or distances from the center evenly distributed along the circumference for better accuracy, steering wheel can rotate freely by 360 degrees without blind zones. If camera can capture the whole surface of the steering wheel without interruptions, then one marker should be enough; otherwise (if any objects obscure the visibility of some parts of the wheel) the method described above will help achieve identical result.&lt;/p&gt;
+&lt;p&gt;To calculate angle, computer also has to know center point of the steering wheel, which can be defined at calibration (more about it later).&lt;/p&gt;
+&lt;h4 id="pedals"&gt;Pedals
+&lt;/h4&gt;&lt;p&gt;A pedal has upper and lower limits and current value. Limits can be set at calibration, and current value can be calculated knowing position of the corresponding marker on the screen and size of the last.&lt;/p&gt;
+&lt;p&gt;Pedals are somewhat more creative in implementation than steering wheel. My approach was to hang a marker on a handle which can be moved up and down by pulling and releasing a string with your leg. This way I could achieve the best result both in terms of usability and accuracy and stability of results.&lt;/p&gt;
+&lt;h3 id="practical-and-theoretical-advantages-of-sdds-in-racing-gaming"&gt;Practical and theoretical advantages of SDDs in racing gaming
+&lt;/h3&gt;&lt;p&gt;1.1 Near-zero cost of your SDDs&lt;br&gt;
+1.2 Full customization of your controls&lt;br&gt;
+1.3 Lightweight, simple to make, easy to take with you&lt;br&gt;
+2.1 Usually provides acceptable or good control (for non-competitive gameplay) - can be improved&lt;br&gt;
+2.2 Can use inputs from gestures and mimics (instead of or in addition to MDs)&lt;/p&gt;
+&lt;h3 id="requirements-and-limitations"&gt;Requirements and limitations
+&lt;/h3&gt;&lt;p&gt;Computer vision strictly depends on lighting and camera quality. Standard laptop camera can capture 20-30 frames per second which might cause a delay which can be crucial when playing racing games. Can be solved by connecting a phone with better camera or an external camera.&lt;/p&gt;
+&lt;p&gt;Lighting should be bright and even. If lighting changes between gaming sessions, software should be recalibrated.&lt;/p&gt;
+&lt;h2 id="sdds-in-other-spheres"&gt;SDDs in other spheres
+&lt;/h2&gt;&lt;h3 id="animal-gaming"&gt;Animal gaming
+&lt;/h3&gt;&lt;p&gt;With SDD technologies animals can play video games naturally without using any hardware and adhering to physical constraints. Software could track animal&amp;rsquo;s movements and sounds and read them as an input.&lt;/p&gt;
+&lt;p&gt;With such unpredictable input however, SDDs might need not just computer vision but an AI component to it to analyze input more accurately (AI might increase accuracy with any SDDs).&lt;/p&gt;
+&lt;h3 id="fighting-using-magic-wands-etc"&gt;Fighting, using magic wands etc
+&lt;/h3&gt;&lt;p&gt;Playing fighting games where you actually fight (with air, at least), dancing where you dance, using magic wands with real hand gestures and pronouncing spells is also possible using SDDs. Similar to VR, you can use your own body as an input device.&lt;/p&gt;
+&lt;h3 id="natural-visual-or-audio-inputs"&gt;Natural visual or audio inputs
+&lt;/h3&gt;&lt;p&gt;With computer monitoring player&amp;rsquo;s mimics, gestures, body movements and words, gaming might become more natural, with games receiving emotional feedback directly* rather than analyzing player actions and outcomes. It can suit highly emotional games like horrors, visual novels, (possibly new genres, revolving around emotional feedback from player) and so on with classic algorithms or AIs analyzing player&amp;rsquo;s emotions through camera and microphone and adjusting the game correspondingly.&lt;/p&gt;
+&lt;p&gt;*mimics, eye movement and body language can reflect one&amp;rsquo;s mood better than actions in a game which are easier to control and less prone to emotional influence.&lt;/p&gt;
+&lt;h2 id="overall-technology-advantages"&gt;Overall technology advantages
+&lt;/h2&gt;&lt;p&gt;1.1 Near-zero cost of your SDDs&lt;br&gt;
+1.2 Full customization of your controls&lt;br&gt;
+1.3 Lightweight, simple to make, easy to take with you&lt;br&gt;
+2.1 Usually provides acceptable or good control (for non-competitive gameplay)&lt;br&gt;
+2.2 Can be extended to any kind of visual inputs (specific attributes, mimics, hand/body gestures, dance pad and so on) (might even eliminate need for any physical &amp;ldquo;devices&amp;rdquo;)&lt;br&gt;
+2.3 Can be used by multiple users and animals&lt;br&gt;
+2.4 Can be extended to be usable in non-racing games (VR with SDDs or other)&lt;br&gt;
+3.1 Can give new gaming experience&lt;/p&gt;
+&lt;h2 id="implementation-details"&gt;Implementation details
+&lt;/h2&gt;&lt;h3 id="using-bounding-boxes-for-static-or-semi-static-inputs"&gt;Using bounding boxes for static or semi-static* inputs
+&lt;/h3&gt;&lt;p&gt;Dealing with computer-vision-based input, we should always contraint it to prevent ambiguous or wrong calculations. When setting up an input marker (steering wheel, pedal, buttons, triggers etc) we shall always (unless dealing with body inputs) define areas where it is located. This way, markers can share the same color scheme and still be unambiguous to the software as they are defined in different contexts.&lt;/p&gt;
+&lt;p&gt;*semi-static inputs here refer to inputs which always adhere to same rules and whose properties can be predicted (e.g. a marker moving only vertically)&lt;/p&gt;
+&lt;h3 id="using-spectrum-of-colors"&gt;Using spectrum of colors
+&lt;/h3&gt;&lt;p&gt;Using contrast colors for markers and algorithms to analyze colors is crucial for accuracy and stability in CV-based SDDs. Acceptable color range depends on lighting conditions, camera quality, marker color and background color.&lt;/p&gt;
+&lt;p&gt;When making a CV-based controller in Python, you can simply use &lt;code&gt;numpy&lt;/code&gt; and &lt;code&gt;cv2&lt;/code&gt; libraries as following:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;span class="lnt"&gt;15
+&lt;/span&gt;&lt;span class="lnt"&gt;16
+&lt;/span&gt;&lt;span class="lnt"&gt;17
+&lt;/span&gt;&lt;span class="lnt"&gt;18
+&lt;/span&gt;&lt;span class="lnt"&gt;19
+&lt;/span&gt;&lt;span class="lnt"&gt;20
+&lt;/span&gt;&lt;span class="lnt"&gt;21
+&lt;/span&gt;&lt;span class="lnt"&gt;22
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-py" data-lang="py"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;detect_color_spots&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hsv&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;lower_bound&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;upper_bound&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;area&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c1"&gt;# constrain inputs to color range&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;mask&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;cv2&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;inRange&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hsv&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;lower_bound&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;upper_bound&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c1"&gt;# constrain inputs to area&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;mask&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;mask&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;area&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;&lt;span class="n"&gt;area&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;area&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]:&lt;/span&gt;&lt;span class="n"&gt;area&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;contours&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;_&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;cv2&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;findContours&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;mask&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;cv2&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;RETR_TREE&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;cv2&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;CHAIN_APPROX_SIMPLE&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;contours&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c1"&gt;# find largest contour found&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;largest_contour&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;max&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;contours&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;key&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;cv2&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;contourArea&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;M&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;cv2&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;moments&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;largest_contour&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c1"&gt;# calculate center position&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;M&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;m00&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;cX&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;M&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;m10&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="n"&gt;M&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;m00&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;area&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;cY&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;M&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;m01&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="n"&gt;M&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;#34;m00&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;area&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;][&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;cX&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;cY&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="kc"&gt;None&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;and then find all spots of the given color range&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;span class="lnt"&gt;4
+&lt;/span&gt;&lt;span class="lnt"&gt;5
+&lt;/span&gt;&lt;span class="lnt"&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-py" data-lang="py"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;red_range&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]),&lt;/span&gt; &lt;span class="n"&gt;np&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;array&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="mi"&gt;255&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;120&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;120&lt;/span&gt;&lt;span class="p"&gt;]))&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;spot_position&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;detect_color_spots&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hsv&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;red_range&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;red_range&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;areas&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;steering&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="n"&gt;spot_position&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c1"&gt;# store the calculated position&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;steering_spot_position&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;spot_position&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id="calibration"&gt;Calibration
+&lt;/h3&gt;&lt;p&gt;Calibration is necessary to adapt software to current lighting and setup. Calibration might include steps such as setting positions, default values, limits, defining areas, adjusting color sensitivity. It might be done automatically (when feedback is given by computer itself), semi-automatically (when user gives feedback) and manually (when user sets all values themselves).&lt;/p&gt;
+&lt;p&gt;Calibration methods can be combined to achieve best accuracy and customization. In my racing setup I used semi-automatic approach for inferring steering wheel center and radius with user fixing these values by pressing certain keys on keyboard. This way, user can fine tune final values without doing tedious and prone-to-error calculations themselves.&lt;/p&gt;
+&lt;h2 id="afterthoughts"&gt;Afterthoughts
+&lt;/h2&gt;&lt;p&gt;It must have certainly been invented before me and I am sure games and technologies as I described and designed already exist, but they remain unknown to the public. I would love to see (and possibly make) this industry grow and thrive to let everyone feel gaming differently.&lt;/p&gt;
+&lt;p&gt;I think playing games by actually moving your body, making gestures that mean something in the digital universe, talking to NPCs with your own voice can bring gaming to a whole new level. Gaming can become physically active, diverse, even more immersive and even more accessible.&lt;/p&gt;
+&lt;p&gt;Less accessible but more immersive option I am thinking about is playing in front of a huge screen with camera put somewhere, when you can play bowling or fight with orcs or shoot a bow as flawlessly and seamlessly as it was real life or VR, but with no equipment and no risks.&lt;/p&gt;
+&lt;p&gt;This essay is inspired by one of my projects - &lt;a class="link" href="https://github.com/AnanasikDev/RacingCVController" target="_blank" rel="noopener"
+&gt;Racing CV Controller (github link)&lt;/a&gt;. I already wrote a post on reddit &lt;a class="link" href="https://www.reddit.com/r/computervision/comments/1gi8xwx/homemade_nohardware_racing_setup/" target="_blank" rel="noopener"
+&gt;here&lt;/a&gt; but later I wanted to extend it with more general and detailed thoughts. I think it&amp;rsquo;s more than a joke project and one day it could bring a lot of joy and new good experience to people.&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>3D on AnanaSeek4Jam</title><link>https://demo.stack.jimmycai.com/tags/3d/</link><description>Recent content in 3D on AnanaSeek4Jam</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 13 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://demo.stack.jimmycai.com/tags/3d/index.xml" rel="self" type="application/rss+xml"/><item><title>3D models to real life figures</title><link>https://demo.stack.jimmycai.com/p/3d_to_real_life/</link><pubDate>Wed, 13 Aug 2025 00:00:00 +0000</pubDate><guid>https://demo.stack.jimmycai.com/p/3d_to_real_life/</guid><description>&lt;img src="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/cover.jpg" alt="Featured image of post 3D models to real life figures" /&gt;&lt;h1 id="3d-models-to-real-life-figures"&gt;3D models to real life figures
+&lt;/h1&gt;&lt;p&gt;Today I want to share the process behind my latest DIY project: a cardboard tiger figure.&lt;/p&gt;
+&lt;p&gt;Full code, blender file and usage instructions are available on &lt;a class="link" href="https://github.com/AnanasikDev/3D-Model-disk-slicer" target="_blank" rel="noopener"
+&gt;Github&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="motivation"&gt;Motivation
+&lt;/h2&gt;&lt;p&gt;I have become a huge fan of large felines. As my obsession grows, I am searching for new ways to connect with their spirits. One such way is this 3D model, which now sits on my desktop.&lt;/p&gt;
+&lt;p&gt;The tiger is my favourite animal, slightly ahead of the cheetah and the leopard. Hopefully, I will be able to create models of them all, although the technology I am about to showcase in this article is rather tedious.&lt;/p&gt;
+&lt;h2 id="plan"&gt;Plan
+&lt;/h2&gt;&lt;p&gt;My plan was rendered as following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Get a 3D model to recreate&lt;/li&gt;
+&lt;li&gt;Find a way to convert the model into an atlas&lt;/li&gt;
+&lt;li&gt;Trace and cut out the pieces&lt;/li&gt;
+&lt;li&gt;Glue all the pieces together&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Sounds like not much.&lt;/p&gt;
+&lt;h2 id="step-1-3d-model"&gt;Step #1: 3D model
+&lt;/h2&gt;&lt;p&gt;Even though I had experience in 3D sculpting in Blender (see &lt;a class="link" href="https://www.artstation.com/ananasikfurry" target="_blank" rel="noopener"
+&gt;Artstation&lt;/a&gt;), I wanted to focus more on bringing it to life, rather than making another virtual sculpt. So I found one online on &lt;a class="link" href="https://www.blenderkit.com/asset-gallery-detail/f4c14f74-7f7b-4962-825f-b8283daa2c57/" target="_blank" rel="noopener"
+&gt;blenderkit&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="step-2-atlas"&gt;Step #2: Atlas
+&lt;/h2&gt;&lt;p&gt;Having found a suitable model, I was then standing upon a real challenge: I had to find a way to convert it into slices of specific thickness so that I could trace individual pieces and then glue them together.&lt;/p&gt;
+&lt;p&gt;I already had experience working with &lt;code&gt;Blender&lt;/code&gt; and I didn&amp;rsquo;t mind getting more, so it was out of question what software to use. However, out of the box &lt;code&gt;Blender&lt;/code&gt; doesn&amp;rsquo;t provide the functionality that I needed (obviously) so I had to come up with my own solution.&lt;/p&gt;
+&lt;p&gt;For that I wrote a &lt;a class="link" href="https://github.com/AnanasikDev/3D-Model-disk-slicer/blob/main/tiger_slicer.py" target="_blank" rel="noopener"
+&gt;python script&lt;/a&gt; to slice my model into pieces of specific thickness, essentially like &lt;a class="link" href="https://en.wikipedia.org/wiki/Magnetic_resonance_imaging" target="_blank" rel="noopener"
+&gt;MRT&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;First, the script calculates the positions and normals of all the planes that will be used to cut the model. The aim when cutting is to obtain a slice of geometry that corresponds to the intersection of the model and the cutting plane. This intersection, which is an edge loop, is then extruded and capped at both ends to create a single slice.&lt;/p&gt;
+&lt;p&gt;Note that a single slice may consist of multiple physically unrelated pieces. In this case the script fills them independently as desired. This was necessary in my case because the middle layers contained several paws, and all the pieces had to be formed correctly.&lt;/p&gt;
+&lt;p&gt;This process it is then repeated as many times as needed to cover the entire model.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;In &lt;code&gt;Blender&lt;/code&gt; it looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/step2/screenshot1.png"
+width="1018"
+height="974"
+srcset="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/step2/screenshot1_hu_ae8e39f7b18e7c76.png 480w, https://demo.stack.jimmycai.com/p/3d_to_real_life/images/step2/screenshot1_hu_8f706640edfb51b3.png 1024w"
+loading="lazy"
+alt="Model sliced in the Y axis"
+class="gallery-image"
+data-flex-grow="104"
+data-flex-basis="250px"
+&gt;
+&lt;em&gt;Model sliced in the Y axis&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img src="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/step2/screenshot2.png"
+width="1023"
+height="957"
+srcset="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/step2/screenshot2_hu_1eff4a00b04e6c44.png 480w, https://demo.stack.jimmycai.com/p/3d_to_real_life/images/step2/screenshot2_hu_492c9d41eb2bc5c1.png 1024w"
+loading="lazy"
+alt="Model sliced in the Z axis"
+class="gallery-image"
+data-flex-grow="106"
+data-flex-basis="256px"
+&gt;
+&lt;em&gt;Model sliced in the Z axis&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Moreover, since my plan was to trace all the pieces by hand (by placing a sheet of paper on a tablet) I added a mode to my script to automatically scatter all the pieces on a flat plane like so:&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/step2/atlas4.jpg"
+width="650"
+height="650"
+srcset="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/step2/atlas4_hu_d72e9c2098d577ac.jpg 480w, https://demo.stack.jimmycai.com/p/3d_to_real_life/images/step2/atlas4_hu_87d70c9629335864.jpg 1024w"
+loading="lazy"
+alt="Atlas"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="240px"
+&gt;&lt;/p&gt;
+&lt;p&gt;The checker pattern you see here is a special material I made that simulates correct physical size, using the scale value from the script that you initially set. One square represents exactly one centimeter.&lt;/p&gt;
+&lt;p&gt;At this point I had everything I needed to start the tedious manual work.&lt;/p&gt;
+&lt;h2 id="step-3-trace-and-prepare"&gt;Step #3: Trace and prepare
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/step3/img1.jpg"
+width="1280"
+height="721"
+srcset="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/step3/img1_hu_b742e79889f15c40.jpg 480w, https://demo.stack.jimmycai.com/p/3d_to_real_life/images/step3/img1_hu_ae06a46b6fee8030.jpg 1024w"
+loading="lazy"
+alt="img1"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+&gt;
+&lt;img src="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/step3/img2.jpg"
+width="1280"
+height="721"
+srcset="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/step3/img2_hu_250440a25c31edc9.jpg 480w, https://demo.stack.jimmycai.com/p/3d_to_real_life/images/step3/img2_hu_ed73de16fc679e95.jpg 1024w"
+loading="lazy"
+alt="img2"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+&gt;&lt;/p&gt;
+&lt;p&gt;Evenings got filled with tracing shapes over and over, then glueing paper and cardboard sheets, then cutting all pieces out.&lt;/p&gt;
+&lt;h2 id="step-4-assembling"&gt;Step #4: Assembling
+&lt;/h2&gt;&lt;p&gt;Lastly, I had to glue all the pieces together. At this stage I realized that I miscalculated the thickness of my cardboard which appeared to be 1.5mm instead of 1mm thick. I compressed many of those pieces using anything heavy I had at home, and it helped. However I was inconsistent about which pieces I compress and which I do not, which resulted in a tilted model and nuances throughout the model.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/step4/img1.jpg"
+width="1280"
+height="721"
+srcset="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/step4/img1_hu_973476ebffd6d9c5.jpg 480w, https://demo.stack.jimmycai.com/p/3d_to_real_life/images/step4/img1_hu_9820866d3e31d01e.jpg 1024w"
+loading="lazy"
+alt="img1"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+&gt;&lt;/p&gt;
+&lt;p&gt;I had more than a hundred pieces so to simplify the process I made an indexation system: first number is the layer index (1-51) and second number is the piece index within its layer (none or 2-5).&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/step4/img2.jpg"
+width="1280"
+height="721"
+srcset="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/step4/img2_hu_8d79a5ce7e379c1d.jpg 480w, https://demo.stack.jimmycai.com/p/3d_to_real_life/images/step4/img2_hu_2bd4f19b3faa09d2.jpg 1024w"
+loading="lazy"
+alt="img2"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Originally I wanted to strenthen the model with wooden sticks which would have become its framework. I cut out exact holes in the 3D model in &lt;code&gt;Blender&lt;/code&gt; and transferred them into the final pieces. It looked promising, but in the end, I hesitated and decided not to use them though. This is one of the main mistakes, because the final figure appeared to be quite wobbly and weak.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/step4/img3.jpg"
+width="721"
+height="900"
+srcset="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/step4/img3_hu_9b4016123179b305.jpg 480w, https://demo.stack.jimmycai.com/p/3d_to_real_life/images/step4/img3_hu_4a2b0dcb51760815.jpg 1024w"
+loading="lazy"
+alt="img3"
+class="gallery-image"
+data-flex-grow="80"
+data-flex-basis="192px"
+&gt;&lt;/p&gt;
+&lt;h2 id="result"&gt;Result
+&lt;/h2&gt;&lt;p&gt;As a result, I now have this lovely physical model of my beloved tiger. Its dimensions are 170 x 104 x 46 mm.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/result/img1.jpg"
+width="1280"
+height="721"
+srcset="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/result/img1_hu_a7af41f2d5245665.jpg 480w, https://demo.stack.jimmycai.com/p/3d_to_real_life/images/result/img1_hu_fa21cda0a30ceba6.jpg 1024w"
+loading="lazy"
+alt="img1"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+&gt;
+&lt;img src="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/result/img2.jpg"
+width="1280"
+height="721"
+srcset="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/result/img2_hu_cf21a7bd3cbf28d4.jpg 480w, https://demo.stack.jimmycai.com/p/3d_to_real_life/images/result/img2_hu_d582e8c9460e9c91.jpg 1024w"
+loading="lazy"
+alt="img2"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+&gt;
+&lt;img src="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/result/img3.jpg"
+width="1280"
+height="721"
+srcset="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/result/img3_hu_5e0c6376fc364061.jpg 480w, https://demo.stack.jimmycai.com/p/3d_to_real_life/images/result/img3_hu_9abc14623084c21b.jpg 1024w"
+loading="lazy"
+alt="img3"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+&gt;
+&lt;img src="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/result/img4.jpg"
+width="1280"
+height="721"
+srcset="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/result/img4_hu_27bf8421b985be7d.jpg 480w, https://demo.stack.jimmycai.com/p/3d_to_real_life/images/result/img4_hu_33cbeb12fede816b.jpg 1024w"
+loading="lazy"
+alt="img4"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+&gt;
+&lt;img src="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/result/img5.jpg"
+width="1280"
+height="721"
+srcset="https://demo.stack.jimmycai.com/p/3d_to_real_life/images/result/img5_hu_52a2070bf9160e23.jpg 480w, https://demo.stack.jimmycai.com/p/3d_to_real_life/images/result/img5_hu_df8bbfba747d1add.jpg 1024w"
+loading="lazy"
+alt="img5"
+class="gallery-image"
+data-flex-grow="177"
+data-flex-basis="426px"
+&gt;&lt;/p&gt;
+&lt;h2 id="thanks-for-reading"&gt;Thanks for reading!
+&lt;/h2&gt;</description></item></channel></rss>

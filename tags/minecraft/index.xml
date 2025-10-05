@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Minecraft on AnanaSeek4Jam</title><link>https://demo.stack.jimmycai.com/tags/minecraft/</link><description>Recent content in Minecraft on AnanaSeek4Jam</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 27 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://demo.stack.jimmycai.com/tags/minecraft/index.xml" rel="self" type="application/rss+xml"/><item><title>How to setup your own minecraft server</title><link>https://demo.stack.jimmycai.com/p/how_to_make_a_minecraft_server/</link><pubDate>Wed, 27 Nov 2024 00:00:00 +0000</pubDate><guid>https://demo.stack.jimmycai.com/p/how_to_make_a_minecraft_server/</guid><description>&lt;h1 id="how-to-setup-your-own-minecraft-server-java-latest-version-your-hardware-free-officialhacked-online-20-players-safe"&gt;How to setup your own minecraft server (Java, latest version, your hardware, free, official/hacked, online, ~20 players, safe)
+&lt;/h1&gt;&lt;h2 id="disclaimer"&gt;Disclaimer
+&lt;/h2&gt;&lt;p&gt;This is not an article but rather an instruction I made for myself to not forget how to setup a server. I was using Windows and doing that for cracked vanilla minecraft 1.21.3 so I can&amp;rsquo;t say if it&amp;rsquo;s working correctly in different conditions. It should generally be a universal approach as Java, Minecraft client and server, and Playit.gg have official ports to Linux and Mac (AFAIK).&lt;/p&gt;
+&lt;p&gt;This approach requires no use of console, no investments, you will have full control over your server. I listed pros and cons of it later in this note.&lt;/p&gt;
+&lt;p&gt;Some of the tutorials/resources that I used:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.youtube.com/watch?v=itVVhcid2_Q&amp;amp;ab_channel=KasaiSora" target="_blank" rel="noopener"
+&gt;Host a Minecraft Server Without Port Forwarding Using Playit.gg &amp;ndash; video by KasaiSora&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.youtube.com/watch?v=NK5lsDXIFnM&amp;amp;ab_channel=playit" target="_blank" rel="noopener"
+&gt;Making your minecraft server public in 48 seconds without port forwarding
+&amp;ndash; video by playit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://www.youtube.com/watch?v=iJiTsM2MT3c&amp;amp;ab_channel=KasaiSora" target="_blank" rel="noopener"
+&gt;How To Make A Cracked Minecraft Server (Any Version)
+&amp;ndash; video by KasaiSora&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://help.minecraft.net/hc/en-us/articles/360058525452-How-to-Setup-a-Minecraft-Java-Edition-Server" target="_blank" rel="noopener"
+&gt;How to Setup a Minecraft: Java Edition Server &amp;ndash; help.minecraft.nent&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class="link" href="https://cyberxgaming.com/how-to-create-a-minecraft-server-for-free/" target="_blank" rel="noopener"
+&gt;How to create a Minecraft server for free!
+&amp;ndash; cyberxgaming.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="steps"&gt;Steps:
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;Install Java&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You have to have Java of the version corresponding to your desired minecraft version (for 1.18+ it is Java 17, for 1.21+ it is Java 21 etc). You can check which version you need to have &lt;a class="link" href="https://docs.mcserversoft.com/advanced/java-version" target="_blank" rel="noopener"
+&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;choose and download your version on &lt;a class="link" href="https://www.oracle.com/java/technologies/downloads/archive/" target="_blank" rel="noopener"
+&gt;oracle website&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;simply download it, run installer, nothing more to do here&lt;/p&gt;
+&lt;hr&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;Official minecraft server software&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Install minecraft official server setup software. It should be a file named &lt;code&gt;server.jar&lt;/code&gt; downloaded from &lt;a class="link" href="https://www.minecraft.net/en-us/download/server" target="_blank" rel="noopener"
+&gt;official minecraft page&lt;/a&gt;. AFAIK only the latest MC release is available here. For a simple setup you won&amp;rsquo;t need console and running commands as opposed to what&amp;rsquo;s said on that page.&lt;/p&gt;
+&lt;p&gt;Alternatively, you may download it from other websites like &lt;a class="link" href="https://mcversions.net/download/1.21.1" target="_blank" rel="noopener"
+&gt;mcversions&lt;/a&gt; where you can choose a specific version.&lt;/p&gt;
+&lt;hr&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;Dedicate a folder to the server files&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Put that &lt;code&gt;server.jar&lt;/code&gt; file where you want to keep your server data. At this stage you should have a folder somewhere on your device where there is only that file.&lt;/p&gt;
+&lt;hr&gt;
+&lt;ol start="4"&gt;
+&lt;li&gt;Generate server files&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Run &lt;code&gt;server.jar&lt;/code&gt; file by double clicking it, it&amp;rsquo;s java executable. In a few seconds it should generate a bunch of files around it (along with &lt;code&gt;server.properties&lt;/code&gt; and &lt;code&gt;eula.txt&lt;/code&gt;). If so, move straight to step 5. It might take around 10 seconds, but If you waited and nothing happened, you need to install &lt;code&gt;jarfix&lt;/code&gt; (program to fix &amp;lsquo;java archive&amp;rsquo; execution issue on Windows) from &lt;a class="link" href="https://johann.loefflmann.net/en/software/jarfix/index.html" target="_blank" rel="noopener"
+&gt;here&lt;/a&gt; or &lt;a class="link" href="https://jarfix.en.softonic.com/" target="_blank" rel="noopener"
+&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;ol start="5"&gt;
+&lt;li&gt;Tweak server settings&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;First and foremost, you must open &lt;code&gt;eula.txt&lt;/code&gt; and set &lt;code&gt;eula&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt;, so that the whole file looks like this (with your date and time, of course):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt;1
+&lt;/span&gt;&lt;span class="lnt"&gt;2
+&lt;/span&gt;&lt;span class="lnt"&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-fallback" data-lang="fallback"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;#By changing the setting below to TRUE you are indicating your agreement to our EULA (https://aka.ms/MinecraftEULA).
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;#Mon Mar 11 13:11:52 CET 2024
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;eula=true
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Then, if you or your friends who you are planning to play with are using cracked minecraft, you also need to go to &lt;code&gt;server.properties&lt;/code&gt; and change &lt;code&gt;online-mode&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;do not forget to save both files!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In the same &lt;code&gt;server.properties&lt;/code&gt; you are also able to set difficulty, gamemode (including hardcore), max number of players, pvp, whitelist, generate structures and view distance along with other settings. I recommend to leave them default and play with them after succeeding in setting up the server to work correctly.&lt;/p&gt;
+&lt;hr&gt;
+&lt;ol start="6"&gt;
+&lt;li&gt;Run server&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Run &lt;code&gt;server.jar&lt;/code&gt; again, a GUI (a window) should appear (it might take some time). Your server is now up and running, but it&amp;rsquo;s only local, meaning that only you can join it. You still should test that everything is working by going to minecraft, multiplayer mode, direct connection and type in &lt;code&gt;localhost&lt;/code&gt; or &lt;code&gt;127.0.0.1&lt;/code&gt;. If it returns an error, try restart your game AND launcher, restart the server and restart the PC. It might be giving errors at first but then begin working normally.&lt;/p&gt;
+&lt;hr&gt;
+&lt;ol start="7"&gt;
+&lt;li&gt;Setup &lt;code&gt;Playit.gg&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In order to make server public and open for other people, we need to setup a way for them to connect to your server.&lt;/p&gt;
+&lt;p&gt;One of the ways to do so is by using &lt;code&gt;Playit.gg&lt;/code&gt;. &lt;a class="link" href="https://www.youtube.com/watch?v=NK5lsDXIFnM&amp;amp;ab_channel=playit" target="_blank" rel="noopener"
+&gt;Here&lt;/a&gt; is a concise tutorial by its developer (&lt;a class="link" href="https://www.reddit.com/r/SideProject/comments/iuk9z7/playitgg_a_tunneling_tool_so_you_can_host_a_game/" target="_blank" rel="noopener"
+&gt;here&lt;/a&gt; is a reddit tread about it).&lt;/p&gt;
+&lt;p&gt;In a nutshell, you need to download &lt;code&gt;Playit.gg&lt;/code&gt; from &lt;a class="link" href="https://%60%60%60Playit.gg%60%60%60/download/windows" target="_blank" rel="noopener"
+&gt;official website&lt;/a&gt;, create an account/login as a guest, then create a tunnel. When created, at the very bottom of the page there is a table with attributes and values, you need one called &lt;code&gt;Allocation (Shared IP)&lt;/code&gt; (IP) OR &lt;code&gt;Domain (Auto Assigned)&lt;/code&gt; (Domain) - you and anyone who wants to connect to your server will need either of these two.&lt;/p&gt;
+&lt;hr&gt;
+&lt;ol start="8"&gt;
+&lt;li&gt;Try in minecraft&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Run minecraft (cracked or official) of the exact same version you created your server on step 1, go to multiplayer, direct connection/add server, put there IP:port from &lt;code&gt;Playit.gg&lt;/code&gt; page from previous step OR domain. Click connect. The only thing you need to share with your friends for them to be able to join your server is either IP or domain, provided by &lt;code&gt;Playit.gg&lt;/code&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="how-to-run-it--shut-it-down"&gt;How to run it / shut it down
+&lt;/h2&gt;&lt;h3 id="running"&gt;running
+&lt;/h3&gt;&lt;p&gt;Run &lt;code&gt;server.jar&lt;/code&gt;, wait for it to launch. Run &lt;code&gt;Playit.gg&lt;/code&gt; application installed on your PC, wait for it to launch. In minecraft, go to multiplayer, paste in your IP:host OR public domain of your server, auto assigned by &lt;code&gt;Playit.gg&lt;/code&gt;, click connect.&lt;/p&gt;
+&lt;h3 id="stopping"&gt;stopping
+&lt;/h3&gt;&lt;p&gt;To stop the server properly you need to shut down both &lt;code&gt;Playit.gg&lt;/code&gt; app and &lt;code&gt;server.jar&lt;/code&gt; app.&lt;/p&gt;
+&lt;h3 id="if-getting-errors-on-login"&gt;If getting errors on login
+&lt;/h3&gt;&lt;p&gt;If getting errors, check following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Playit.gg&lt;/code&gt;&lt;/strong&gt; AND &lt;strong&gt;&lt;code&gt;server.jar&lt;/code&gt;&lt;/strong&gt; are both running. Check their consoles for any errors&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Minecraft&lt;/strong&gt; is of correct version (same as server)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Internet&lt;/strong&gt; connection is stable&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Java&lt;/strong&gt; version is correct&lt;/li&gt;
+&lt;li&gt;Check if &lt;strong&gt;localhost&lt;/strong&gt; is working correctly. To do so, you won&amp;rsquo;t need &lt;code&gt;Playit.gg&lt;/code&gt;, simply run &lt;code&gt;server.jar&lt;/code&gt; and try to connect to it using &lt;code&gt;localhost&lt;/code&gt; as described earlier in steps 1-6.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If errors persist, try following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Restart game and launcher, server.jar, &lt;code&gt;Playit.gg&lt;/code&gt; app and/or PC&lt;/li&gt;
+&lt;li&gt;Disable and enable &lt;code&gt;Playit.gg&lt;/code&gt; tunnel, try deleting it and creating a new one&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="proscons"&gt;Pros/Cons
+&lt;/h2&gt;&lt;p&gt;Pros:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Completely free&lt;/li&gt;
+&lt;li&gt;Safe (you do not share you own IP or open extra ports)&lt;/li&gt;
+&lt;li&gt;Works on both official and cracked minecraft&lt;/li&gt;
+&lt;li&gt;Can work with mods (search for a better instruction on that)&lt;/li&gt;
+&lt;li&gt;Can handle up to 20 players by default&lt;/li&gt;
+&lt;li&gt;You are using your own hardware for that (you can dedicate a lot of RAM and storage)&lt;/li&gt;
+&lt;li&gt;All files are stored on your device, noone has control over them except for you, you can change settings etc&lt;/li&gt;
+&lt;li&gt;You can create a whitelist and have control over connections&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Cons:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Might be a bit problematic to setup&lt;/li&gt;
+&lt;li&gt;Your device has to be running for the server to be running&lt;/li&gt;
+&lt;li&gt;Your server will take storage space and resources of your device&lt;/li&gt;
+&lt;li&gt;I could figure out how to create a server of non-latest version&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="other-approaches-to-creating-a-minecraft-server"&gt;Other approaches to creating a Minecraft server
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Using hosts, like Scalacube (2.8GB, 6GB RAM for free - getting full very quickly) etc. Limited to storage space and RAM, but very easy to setup and use.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Using the same &lt;code&gt;server.jar&lt;/code&gt; with port forwarding (less safe, more difficult to setup, needs access to your router).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Using LAN and Hamachi (not exactly a server but allows to play with friends). Might cause severe ping.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Minecraft Realms. Paid and works only with official minecraft&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description></item></channel></rss>
