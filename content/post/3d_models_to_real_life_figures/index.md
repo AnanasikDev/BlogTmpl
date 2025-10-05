@@ -1,10 +1,19 @@
+---
+title: 3D models to real life figures
+description: I made a cardboard figure using Blender
+slug: 3d_to_real_life
+date: 2025-08-13
+image: cover.jpg
+categories:
+tags:
+    - 3d
+---
+
 # 3D models to real life figures
 
 Today I want to share the process behind my latest DIY project: a cardboard tiger figure.
 
 Full code, blender file and usage instructions are available on [Github](https://github.com/AnanasikDev/3D-Model-disk-slicer).
-
-![img0](images/cover.jpg)
 
 ## Motivation
 
