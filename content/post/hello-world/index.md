@@ -1,13 +1,11 @@
 ---
-title: Hello World
-description: Welcome to Hugo Theme Stack
-slug: hello-world
-date: 2022-03-06 00:00:00+0000
+title: Hi there👋
+description: I am AnanSeek4Jam - a young enthusiast with passion for game development, programming and art
+slug: about_me
+date: 2021-18-06
 image: cover.jpg
 categories:
-    - Example Category
 tags:
-    - Example Tag
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 
