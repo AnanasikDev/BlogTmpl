@@ -16,10 +16,10 @@
         .article-header {
             .article-image {
                 img {
-                    height: auto;
-                    width: 100%;
-                    max-height: 50vh;
-                    object-fit: cover;
+                    width: 20%;
+                    place-items: center;
+                    justify-content: center;
+                    align-items: center;
                 }
             }
 
@@ -218,6 +218,7 @@
     h4,
     h5,
     h6 {
+        color: #5dadbb;
         margin-inline-start: calc((var(--card-padding)) * -1);
         padding-inline-start: calc(var(--card-padding) - var(--heading-border-size));
         border-inline-start: var(--heading-border-size) solid var(--accent-color);
@@ -242,6 +243,28 @@
             a.header-anchor {
                 opacity: 1;
             }
+        }
+    }
+
+    li{
+        color: #267986;
+        font-style: italic;
+        [data-scheme='dark'] & {
+            color: #b7eaf0;
+        }
+    }
+
+    a{
+        color: #94c881;
+        [data-scheme='dark'] & {
+             color: #9fdcf9;
+        }
+    }
+
+    a:hover{
+        color: #329868;
+        [data-scheme='dark'] & {
+             color: #526ec1;
         }
     }
 

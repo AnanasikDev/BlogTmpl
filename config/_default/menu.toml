@@ -42,7 +42,7 @@ icon = "brand-artstation"
 [[social]]
 identifier = "itchdotio"
 name = "Itch.io"
-url = "https://www.artstation.com/ananasikfurry"
+url = "https://ananasikdeveloper.itch.io/"
 
 [social.params]
 icon = "brand-itchdotio"

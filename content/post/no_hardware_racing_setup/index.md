@@ -4,7 +4,7 @@ description: I really wanted to play Horza Horizon 4 with a wheel... so I made o
 slug: no_hardware_racing_setup
 date: "2024-11-20"
 image: images/img1.png
-coverHeight: xxxl
+coverHeight: xl
 tags:
     - Games
     - Programming
@@ -21,19 +21,19 @@ In this essay, I want to discuss opportunities that computer vision (possibly in
 
 My idea revolves around eliminating additional hardware accessories, leaving only a laptop, phone or tablet which are non-specific to gaming. Depending on the desired result, one may make marker-devices (MD for short) which are physical attributes one can use to play games.
 
-### Why?
+## Why?
 
 Hardware is expensive, inconvenient in transportation, difficult in distribution and modification, and barely sustainable in home conditions. In contrast, Software-Driven Devices (SDD for short) can be made at home; their price consists only of the cost of materials; and they are highly customizable.
+
+## How?
+
+Generally, the idea behind SDD is in utilizing computer vision (through camera) as the only (or, at least, primary) source of input for a computer, eliminating need in any classical, hardware-driven-devices.
 
 ## Racing setup
 
 ### What?
 
 The term "racing setup" here refers to devices one needs to play racing video games. Racing setups usually include a steering wheel, two or three pedals, and, in more expensive models, also gearbox, turn signals and other car controls. The most important parts of it that I will cover more profoundly in this essay are steering wheel and gas and brake pedals.
-
-### How?
-
-Generally, the idea behind SDD is in utilizing computer vision (through camera) as the only (or, at least, primary) source of input for a computer, eliminating need in any classical, hardware-driven-devices.
 
 #### Steering wheel
 
