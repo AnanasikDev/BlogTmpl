@@ -11,6 +11,8 @@ tags:
     - Proof of concept
 ---
 
+![showcase](images/img1.png)
+
 # Software-Driven Devices in gaming
 
 In this essay, I want to discuss opportunities that computer vision (possibly in combination with other inputs) provides in gaming, how it can be implemented, describe several approaches to it and their benefits, and discuss the theoretical future of this technology.
@@ -151,3 +153,7 @@ I think playing games by actually moving your body, making gestures that mean so
 Less accessible but more immersive option I am thinking about is playing in front of a huge screen with camera put somewhere, when you can play bowling or fight with orcs or shoot a bow as flawlessly and seamlessly as it was real life or VR, but with no equipment and no risks.
 
 This essay is inspired by one of my projects - [Racing CV Controller (github link)](https://github.com/AnanasikDev/RacingCVController). I already wrote a post on reddit [here](https://www.reddit.com/r/computervision/comments/1gi8xwx/homemade_nohardware_racing_setup/) but later I wanted to extend it with more general and detailed thoughts. I think it's more than a joke project and one day it could bring a lot of joy and new good experience to people.
+
+Video:
+
+{{< youtube "https://www.youtube.com/watch?v=giQNNACyR_M&t=79s" >}}
