@@ -2,13 +2,15 @@
 title: How I made my own steering wheel using only my laptop
 description: I really wanted to play Horza Horizon 4 with a wheel... so I made one.
 slug: no_hardware_racing_setup
-date: 2024-11-20
+date: "2024-11-20"
 tags:
     - Games
     - Programming
     - Python
     - Computer Vision
     - Proof of concept
+    - Essay
+    - English
 ---
 
 ![showcase](images/img1.png)
@@ -156,4 +158,4 @@ This essay is inspired by one of my projects - [Racing CV Controller (github lin
 
 Video:
 
-{{< youtube "https://www.youtube.com/watch?v=giQNNACyR_M&t=79s" >}}
+{{< youtube "giQNNACyR_M&t=79s" >}}
