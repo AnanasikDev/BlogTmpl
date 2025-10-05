@@ -9,8 +9,6 @@ tags:
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 
-### Hi there 👋
-
 I am **Ananaseek** or **AnanseekJam** - a young enthusiast with passion for game development, programming and art. Having embarked on my journey in **2020 Jan**, I learned **Python**, **C#** + **Unity**, some **C++**, **C** and **Java**. I also led 2 teams on gamejams (Mini Jam <a href="https://itch.io/jam/mini-jam-162-heat">#162</a> and <a href="https://itch.io/jam/mini-jam-163-dessert">#163</a>).
 
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/unity/unity-original.svg" alt="Unity" width="28" height="28"/><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="C#" width="28" height="28"/>
@@ -29,7 +27,7 @@ I am **Ananaseek** or **AnanseekJam** - a young enthusiast with passion for game
 *🔥-ed* are my **favourite** projects<br>
 *🔒-ed* are **finished** projects <br>
 
- **Games:**
+## Games
 
 1. <a href="https://ananasikdev.github.io/TheSwapEngageWeb/">The Swap: Engage🧊🔥</a><br/>
 2. <a href="https://github.com/AnanasikDev/Compile">Compile🔥🔥🔨</a><br/>
@@ -44,14 +42,14 @@ I am **Ananaseek** or **AnanseekJam** - a young enthusiast with passion for game
 11. <a href="https://github.com/AnanasikDev/UniverseJam">Inevitable (UniverseJam #1)🔥🔒</a><br/>
 
  
-**Libraries & Assets:**
+## Libraries & Assets
 
 1. <a href="https://github.com/AnanasikDev/Willow">Willow Asset🧊🔥</a><br/>
 2. <a href="https://github.com/AnanasikDev/Hexagon">Hexagon Library🔥🔨</a><br/>
 3. <a href="https://github.com/AnanasikDev/FrameRateDebugger">FPS debugger🔒</a><br/>
 4. <a href="https://github.com/AnanasikDev/EasyDebug">EasyDebug🔥🔨</a><br/>
 
-**Other:**
+## Other
 
 1. <a href="https://github.com/AnanasikDev/FileArchivator"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="16" height="16"/> File archivator🔒</a><br/>
 2. <a href="https://github.com/AnanasikDev/FlappyBirdAI"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="C#" width="16" height="16"/> Genetic algorithm learning to play Flappy Bird🔥🔒</a><br/>

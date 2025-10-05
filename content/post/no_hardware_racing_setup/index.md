@@ -5,6 +5,7 @@ slug: no_hardware_racing_setup
 date: 2024-11-20
 tags:
     - Games
+    - Programming
     - Python
     - Computer Vision
     - Proof of concept

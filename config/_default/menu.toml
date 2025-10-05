@@ -16,7 +16,7 @@ url = "https://github.com/AnanasikDev"
 icon = "brand-github"
 
 [[social]]
-identifier = "Bluesky"
+identifier = "bluesky"
 name = "Bluesky"
 url = "https://bsky.app/profile/ananaseek4jam.bsky.social"
 
@@ -24,9 +24,25 @@ url = "https://bsky.app/profile/ananaseek4jam.bsky.social"
 icon = "brand-bluesky"
 
 [[social]]
-identifier = "Youtube"
+identifier = "youtube"
 name = "Youtube"
 url = "https://www.youtube.com/@ananaseek"
 
 [social.params]
 icon = "brand-youtube"
+
+[[social]]
+identifier = "artstation"
+name = "Artstation"
+url = "https://www.artstation.com/ananasikfurry"
+
+[social.params]
+icon = "brand-artstation"
+
+[[social]]
+identifier = "itchdotio"
+name = "Itch.io"
+url = "https://www.artstation.com/ananasikfurry"
+
+[social.params]
+icon = "brand-itchdotio"
