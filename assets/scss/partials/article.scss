@@ -34,66 +34,122 @@
             }
         }
 
-        .article-image-xxxs{
+        .article-image-s1{
             @extend .article-image;
             img {
                 height: 70px;
             }
         }
 
-        .article-image-xxs{
+        .article-image-s2{
             @extend .article-image;
             img {
                 height: 100px;
             }
         }
         
-         .article-image-xs{
+         .article-image-s3{
             @extend .article-image;
             img {
                 height: 130px;
             }
         }
 
-        .article-image-s{
+        .article-image-s4{
             @extend .article-image;
             img {
-                height: 1550px;
+                height: 150px;
             }
         }
 
-        .article-image-md{
+        .article-image-s5{
+            @extend .article-image;
+            img {
+                height: 160px;
+            }
+        }
+
+        .article-image-m1{
             @extend .article-image;
             img {
                 height: 180px;
             }
         }
 
-        .article-image-l{
+        .article-image-m2{
             @extend .article-image;
             img {
-                height: 200px;
+                height: 215px;
             }
         }
 
-        .article-image-xl{
+        .article-image-m3{
+            @extend .article-image;
+            img {
+                height: 235px;
+            }
+        }
+
+        .article-image-m4{
             @extend .article-image;
             img {
                 height: 250px;
             }
         }
 
-        .article-image-xxl{
+        .article-image-m5{
             @extend .article-image;
             img {
-                height: 300px;
+                height: 275px;
             }
         }
 
-        .article-image-xxl{
+        .article-image-l1{
             @extend .article-image;
             img {
-                height: 335px;
+                height: 315px;
+            }
+        }
+
+        .article-image-l2{
+            @extend .article-image;
+            img {
+                height: 345px;
+            }
+        }
+
+        .article-image-l3{
+            @extend .article-image;
+            img {
+                height: 380px;
+            }
+        }
+
+        .article-image-l4{
+            @extend .article-image;
+            img {
+                height: 415px;
+            }
+        }
+
+        .article-image-l5{
+            @extend .article-image;
+            img {
+                height: 450px;
+            }
+        }
+
+        .article-image-l6{
+            @extend .article-image;
+            img {
+                height: 490px;
+            }
+        }
+
+        .article-image-l7{
+            @extend .article-image;
+            img {
+                height: 535px;
             }
         }
 

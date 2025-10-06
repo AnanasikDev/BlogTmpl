@@ -4,7 +4,7 @@ description: I have been working on my game and needed a way to generate islands
 slug: unity_island_generator
 date: 2022-08-25
 image: images/ImgIslands.jpg
-coverHeight: xl
+coverHeight: l1
 tags:
     - Gamedev
     - Programming

@@ -2,9 +2,9 @@
 title: How to setup your own minecraft server
 description: Me and my friend wanted to play Minecraft together. This is how we made a server.
 slug: how_to_make_a_minecraft_server
-date: "2024-11-27"
+date: 2024-11-27
 image: images/img2.png
-coverHeight: xxl
+coverHeight: l3
 tags:
     - Guide
     - Games

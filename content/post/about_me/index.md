@@ -6,7 +6,7 @@ date: 2021-06-18
 image: cover2.jpg
 categories:
 readingTime: false
-coverHeight: xxl
+coverHeight: l2
 tags:
     - English
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
@@ -21,7 +21,7 @@ I am **Ananaseek** or **AnanseekJam** - a young enthusiast with passion for game
 <a href="https://www.java.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" width="28" height="28"/></a>
 <a href="https://visualstudio.microsoft.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/visualstudio/visualstudio-original.svg" alt="Visual Studio" width="28" height="28"/></a>
 <a href="https://git-scm.com/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git" width="28" height="28"/></a>
-<a href="https://www.blender.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/blender/blender-original.svg" alt="Git" width="28" height="28"/></a>
+<a href="https://www.blender.org/"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/blender/blender-original.svg" alt="Git" width="28" height="28"/></a>       
 
 <hr>
 
