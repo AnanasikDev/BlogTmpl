@@ -246,7 +246,7 @@
         }
     }
 
-    li{
+    li {
         color: #267986;
         font-style: italic;
         [data-scheme='dark'] & {
@@ -254,15 +254,15 @@
         }
     }
 
-    a{
-        color: #94c881;
+    a {
+        color: #3a748d;
         [data-scheme='dark'] & {
              color: #9fdcf9;
         }
     }
 
-    a:hover{
-        color: #329868;
+    a:hover {
+        color: #32988a;
         [data-scheme='dark'] & {
              color: #526ec1;
         }

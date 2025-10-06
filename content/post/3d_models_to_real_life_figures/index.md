@@ -80,8 +80,8 @@ At this point I had everything I needed to start the tedious manual work.
 
 ## Step #3: Trace and prepare
 
-![img1](images/step3/img1.jpg)
-![img2](images/step3/img2.jpg)
+![](images/step3/img1.jpg)
+![](images/step3/img2.jpg)
 
 Evenings got filled with tracing shapes over and over, then glueing paper and cardboard sheets, then cutting all pieces out.
 
@@ -89,26 +89,27 @@ Evenings got filled with tracing shapes over and over, then glueing paper and ca
 
 Lastly, I had to glue all the pieces together. At this stage I realized that I miscalculated the thickness of my cardboard which appeared to be 1.5mm instead of 1mm thick. I compressed many of those pieces using anything heavy I had at home, and it helped. However I was inconsistent about which pieces I compress and which I do not, which resulted in a tilted model and nuances throughout the model.
 
-![img1](images/step4/img1.jpg)
+![](images/step4/img1.jpg)
 
 I had more than a hundred pieces so to simplify the process I made an indexation system: first number is the layer index (1-51) and second number is the piece index within its layer (none or 2-5).
 
-![img2](images/step4/img2.jpg)
+![](images/step4/img2.jpg)
 
 ---
 
 Originally I wanted to strenthen the model with wooden sticks which would have become its framework. I cut out exact holes in the 3D model in `Blender` and transferred them into the final pieces. It looked promising, but in the end, I hesitated and decided not to use them though. This is one of the main mistakes, because the final figure appeared to be quite wobbly and weak.
 
-![img3](images/step4/img3.jpg)
+![](images/step4/img3.jpg)
 
 ## Result
 
 As a result, I now have this lovely physical model of my beloved tiger. Its dimensions are 170 x 104 x 46 mm.
 
-![img1](images/result/img1.jpg)
-![img2](images/result/img2.jpg)
-![img3](images/result/img3.jpg)
-![img4](images/result/img4.jpg)
-![img5](images/result/img5.jpg)
+![](images/result/img1.jpg)
+![](images/result/img2.jpg)
+![](images/result/img3.jpg)
+
+![](images/result/img4.jpg)
+![](images/result/img5.jpg)
 
 ## Thanks for reading!

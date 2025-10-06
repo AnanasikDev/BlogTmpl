@@ -74,7 +74,15 @@
     gap: var(--widget-separation);
 
     &.sticky {
-        top: 0;
+        top:0;
+        max-height: 100vh;
+
+        overflow-y: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
     @include respond(lg) {
