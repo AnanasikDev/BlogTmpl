@@ -4,7 +4,7 @@ description: I made a cardboard figure using Blender
 slug: 3d_to_real_life
 date: 2025-08-13
 image: images/cover.jpg
-categories:
+categories: art
 coverHeight: full
 tags:
     - 3D

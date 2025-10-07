@@ -5,6 +5,7 @@ slug: how_to_make_a_minecraft_server
 date: 2024-11-27
 image: images/img2.png
 coverHeight: l3
+categories: games
 tags:
     - Guide
     - Games

@@ -5,6 +5,7 @@ slug: unity_island_generator
 date: 2022-08-25
 image: images/ImgIslands.jpg
 coverHeight: l1
+categories: programming
 tags:
     - Gamedev
     - Programming

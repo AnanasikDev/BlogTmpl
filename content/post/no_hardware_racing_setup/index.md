@@ -5,6 +5,7 @@ slug: no_hardware_racing_setup
 date: 2024-11-20
 image: images/img1.png
 coverHeight: l3
+categories: programming
 tags:
     - Games
     - Programming

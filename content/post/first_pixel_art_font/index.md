@@ -5,6 +5,7 @@ slug: first_pixel_art_font
 image: images/cover.png
 coverHeight: l2
 date: 2025-05-12
+categories: art
 tags:
     - 2D
     - English
