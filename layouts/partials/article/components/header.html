@@ -34,18 +34,4 @@
     {{ end }}
 
     {{ partialCached "article/components/details" . .RelPermalink }}
-
-    <div class="article-details">
-        {{ $items := .Params.seealso }}
-        {{ range $index, $item := $items }}
-            <div class="article-seealso">
-                {{ $parts := split $item " | " }}
-                {{ $url := index $parts 0 }}
-                {{ $text := index $parts 1 }}
-                {{ $type := index $parts 2 }}
-                {{ partial "helper/icon" $type }}
-                <a href="{{ $url }}">{{$text}}</a>
-            </div>
-        {{ end }}
-    </div>
 </header>

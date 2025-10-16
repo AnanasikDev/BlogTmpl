@@ -299,7 +299,6 @@
     justify-content: center;
     padding: var(--card-padding);
     gap: 15px;
-    color: #47edce;
 }
 
 /* Compact style article list */
@@ -434,6 +433,7 @@
     display: flex;
     color: var(--card-text-color-accent);
     gap: 5px;
+    line-height: normal;
 
     svg {
         vertical-align: middle;
@@ -455,4 +455,10 @@
         align-items: center;
         gap: 5px;
     }
+}
+
+.article-seealso-list{
+    @extend .article-seealso;
+    padding: var(--card-padding);
+    padding-top: 0;
 }
