@@ -3,7 +3,7 @@ title: Lolly Jump
 description: Mobile game
 slug: lolly_jump_en
 date: 2024-03-31
-image: /posts/lolly_jump/img13.jpg
+image: posts/lolly_jump/img13.jpg
 coverHeight: l2
 categories:
     - Programming
