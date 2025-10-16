@@ -3,7 +3,9 @@ title: Закрой глаза
 description: Сборник стихов
 slug: book_zakroy_glaza_ru
 date: 2025-04-20
-categories: literature
+categories:
+    - Literature
+    - Russian
 tags:
     - Literature
     - Russian

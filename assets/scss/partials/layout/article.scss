@@ -12,15 +12,18 @@
         border-radius: var(--card-border-radius);
         box-shadow: var(--shadow-l1);
         overflow: hidden;
-
+        
+        img {
+            width: 100%;
+            object-fit: cover;
+            place-items: center;
+            justify-content: center;
+            align-items: center;
+        }
+        
         .article-header {
             .article-image {
-                img {
-                    width: 20%;
-                    place-items: center;
-                    justify-content: center;
-                    align-items: center;
-                }
+                
             }
 
             .article-details {
@@ -257,7 +260,7 @@
     a {
         color: #3a748d;
         [data-scheme='dark'] & {
-             color: #9fdcf9;
+             color: var(--card-text-color-accent);
         }
     }
 

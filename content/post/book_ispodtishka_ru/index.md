@@ -3,7 +3,9 @@ title: Исподтишка
 description: Сборник стихов. Общественное влияние, табу, осуждение и зависимости.
 slug: book_ispodtishka_ru
 date: 2025-06-20
-categories: literature
+categories:
+    - Literature
+    - Russian
 tags:
     - Literature
     - Russian

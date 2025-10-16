@@ -4,12 +4,16 @@ description: Mobile game
 slug: lolly_jump_en
 date: 2024-03-31
 image: images/img13.jpg
-categories: programming
 coverHeight: l2
+categories:
+    - Programming
+    - English
 tags:
     - Programming
     - Unity
     - English
+seealso:
+     - https://ananasikdev.github.io/blog/p/lolly_jump_ru/ | Read in Russian | language
 ---
 
 ###

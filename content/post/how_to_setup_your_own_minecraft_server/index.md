@@ -5,7 +5,9 @@ slug: how_to_make_a_minecraft_server
 date: 2024-11-27
 image: images/img2.png
 coverHeight: l3
-categories: games
+categories:
+    - Games
+    - English
 tags:
     - Guide
     - Games
@@ -13,7 +15,9 @@ tags:
     - English
 ---
 
-# How to setup your own minecraft server (Java, latest version, your hardware, free, official/hacked, online, ~20 players, safe)
+# How to setup your own minecraft server
+
+Java, latest version, your hardware, free, official/hacked, online, ~20 players, safe
 
 ## Disclaimer
 

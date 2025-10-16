@@ -3,7 +3,9 @@ title: Бестия морали
 description: Кто вас ведет и куда? Трилогия стихов о философии морального компаса.
 slug: book_bestia_moraly_ru
 date: 2023-02-23
-categories: literature
+categories:
+    - Literature
+    - Russian
 tags:
     - Literature
     - Russian

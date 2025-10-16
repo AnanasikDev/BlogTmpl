@@ -4,9 +4,3 @@ languageName = "English"
 languagedirection = "ltr"
 title = "AnanaSeek4Jam"
 weight = 1
-
-[ru]
-languageName = "Russian"
-languagedirection = "ltr"
-title = "AnanaSeek4Jam"
-weight = 1

@@ -4,9 +4,10 @@ description: I am AnanSeek4Jam - a young enthusiast with passion for game develo
 slug: about_me
 date: 2021-06-18
 image: cover2.jpg
-categories:
 readingTime: false
 coverHeight: l2
+categories:
+    - English
 tags:
     - English
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)

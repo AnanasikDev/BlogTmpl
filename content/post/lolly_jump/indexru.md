@@ -4,12 +4,16 @@ description: Мобильная игра
 slug: lolly_jump_ru
 date: 2024-03-31
 image: images/img13.jpg
-categories: programming
 coverHeight: l2
+categories:
+    - Programming
+    - Russian
 tags:
     - Programming
     - Unity
     - Russian
+seealso:
+     - https://ananasikdev.github.io/blog/p/lolly_jump_en/ | Read in English | language
 ---
 
 В качестве школьной проектной работы я разработал Lolly Jump - мобильную игру на Unity. Скачать или поиграть в браузере можно на странице [Itch.io](https://ananasikdeveloper.itch.io/lolly-jump)

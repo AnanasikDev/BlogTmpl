@@ -6,7 +6,9 @@ date: 2025-08-31
 image: images/cover.jpg
 coverHeight: l1
 readTime: false
-categories: art
+categories:
+    - Art
+    - English
 tags:
     - 3D
     - Blender
