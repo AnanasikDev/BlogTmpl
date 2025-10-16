@@ -16,3 +16,11 @@ disqusShortname = "hugo-theme-stack"
 
 [pagination]
 pagerSize = 8
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+  [[module.mounts]]
+    source = 'static'
+    target = 'assets'
