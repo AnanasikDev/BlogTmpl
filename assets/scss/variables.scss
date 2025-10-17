@@ -60,7 +60,21 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --card-text-color-main: #000;
     --card-text-color-secondary: #747474;
     --card-text-color-tertiary: #767676;
-    --card-text-color-accent: #9fdcf9;
+
+    &[data-scheme="dark"]{
+        --card-text-color-accent: #9fdcf9;
+    }
+    &[data-scheme="light"]{
+        --card-text-color-accent: #3a748d;
+    }
+
+    &[data-scheme="dark"]{
+        --card-text-color-link: #9fdcf9;
+    }
+    &[data-scheme="light"]{
+        --card-text-color-link: #3a748d;
+    }
+
     --card-separator-color: rgba(218, 218, 218, 0.5);
 
     --card-border-radius: 10px;

@@ -1,0 +1,9 @@
+<div class="embedlink-wrapper">
+    {{ $url := .Get "url"}}
+    {{ $caption := .Get "caption"}}
+    {{ $icon := .Get "icon"}}
+    <div class="article-seealso-item">
+        {{ partial "helper/icon" $icon }}
+        <a href="{{ $url }}">{{$caption}}</a>
+    </div>
+</div>

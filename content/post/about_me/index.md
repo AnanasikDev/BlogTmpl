@@ -10,7 +10,16 @@ categories:
     - English
 tags:
     - English
-weight: 1       # You can add weight to some posts to override the default sorting (date descending)
+weight: 1
+seealsoMode: "inline"
+seealso:
+     - https://github.com/AnanasikDev | GitHub | brand-github | showInList
+     - https://ananasikdeveloper.itch.io/ | Itch.io | brand-itchdotio | showInList
+     - https://www.artstation.com/ananasikfurry | Artstation | brand-artstation | showInList
+     - https://www.cgtrader.com/designers/ananasik | CGTrader | brand-cgtrader | showInList
+     - https://sketchfab.com/furryananasik | Sketchfab | brand-sketchfab | showInList
+     - https://www.turbosquid.com/Search/Artists/Ananaseek | Turbosquid | brand-turbosquid | showInList
+     - https://author.today/u/ananaseek | Author Today | brand-authortoday | showInList
 ---
 
 I am **Ananaseek** or **AnanseekJam** - a young enthusiast with passion for game development, programming and art. Having embarked on my journey in **2020 Jan**, I learned **Python**, **C#** + **Unity**, some **C++**, **C** and **Java**. I also led 2 teams on gamejams (Mini Jam <a href="https://itch.io/jam/mini-jam-162-heat">#162</a> and <a href="https://itch.io/jam/mini-jam-163-dessert">#163</a>).

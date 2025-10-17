@@ -1,5 +1,5 @@
 ---
-title: Lolly Jump
+title: Lolly Jump (Русский)
 description: Мобильная игра
 slug: lolly_jump_ru
 date: 2024-03-31

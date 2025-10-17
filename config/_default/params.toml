@@ -36,12 +36,6 @@ default = "Licensed under CC BY-NC-SA 4.0"
 type = "search"
 
 [[widgets.homepage]]
-type = "archives"
-
-[widgets.homepage.params]
-limit = 5
-
-[[widgets.homepage]]
 type = "categories"
 
 [widgets.homepage.params]
@@ -55,6 +49,12 @@ limit = 30
 
 [[widgets.page]]
 type = "toc"
+
+[[widgets.homepage]]
+type = "archives"
+
+[widgets.homepage.params]
+limit = 5
 
 [opengraph.twitter]
 site = ""

@@ -250,18 +250,12 @@
     }
 
     li {
-        color: #267986;
         font-style: italic;
-        [data-scheme='dark'] & {
-            color: #b7eaf0;
-        }
+        color: var(--card-text-color-accent);
     }
 
     a {
-        color: #3a748d;
-        [data-scheme='dark'] & {
-             color: var(--card-text-color-accent);
-        }
+        color: var(--card-text-color-link);
     }
 
     a:hover {
