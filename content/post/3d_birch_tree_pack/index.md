@@ -13,8 +13,9 @@ tags:
     - 3D
     - Blender
     - English
+seealso:
+    - https://www.turbosquid.com/3d-models/21-voxel-birch-tree-pack-3d-model-2455271 | On Turbosquid | brand-turbosquid | showInList
+    - https://ananasikdeveloper.itch.io/big-voxel-birches-pack | On Itch.io | brand-itchdotio | showInList
 ---
 
-Buy them on:
-- [Turbo Squid](https://www.turbosquid.com/3d-models/21-voxel-birch-tree-pack-3d-model-2455271)
-- [Itch.io](https://ananasikdeveloper.itch.io/big-voxel-birches-pack)
+Buy them now!

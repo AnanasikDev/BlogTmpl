@@ -465,6 +465,10 @@
 span{
     &.article-seealso-item{
         width: 30%;
+        //min-width:min-content;
+        // @include respond (md){
+        //     width: 40%;
+        // }
         flex-direction: row;
         display:inline-block;
         align-self: center;

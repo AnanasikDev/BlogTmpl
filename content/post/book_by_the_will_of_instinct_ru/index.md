@@ -12,6 +12,9 @@ tags:
     - Literature
     - Furry
     - Russian
+seealso:
+    - https://author.today/work/459069 | На Author Today | brand-authortoday | showInList
+    - https://www.wattpad.com/story/394500357-%D0%BF%D0%BE-%D0%B2%D0%BE%D0%BB%D0%B5-%D0%B8%D0%BD%D1%81%D1%82%D0%B8%D0%BD%D0%BA%D1%82%D0%B0 | На Wattpad | brand-wattpad | showInList
 ---
 
 ## Глава 1

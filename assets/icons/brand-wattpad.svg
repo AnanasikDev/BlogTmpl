@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- License: MIT. Made by Garuda Technology: https://github.com/garudatechnologydevelopers/sketch-icons -->
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 0 48 48"
+   fill="none"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="brand-wattpad.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.45875"
+     inkscape:cx="400.34276"
+     inkscape:cy="454.84147"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="2552"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <circle
+     cx="24"
+     cy="24"
+     r="20"
+     fill="none"
+     id="circle1" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="m 31.599968,17.856148 c 1.98618,-2.691429 5.452541,-7.078438 9.153924,-8.6091376 3.051184,-1.2618134 6.231557,0.061786 5.333179,3.5324556 -0.352345,1.360886 -2.113329,3.212935 -3.343292,5.02422 -2.120186,3.122636 -4.284855,7.087029 -6.049359,10.676149 -1.232189,2.506626 -2.125191,4.604348 -3.900261,6.201585 -4.356769,3.919973 -10.923433,0.444915 -10.427445,-9.00141 -2.441021,3.017347 -3.863931,9.618332 -7.004823,12.691065 -1.16602,1.140988 -3.811108,2.404812 -6.3677862,1.72702 C 2.1952009,38.295947 0.98303068,26.269331 2.1484935,17.332632 2.6329909,13.617933 3.9063257,10.106316 6.4468794,9.1685924 8.3040573,8.4831231 10.91949,8.9742855 12.018785,9.9536849 c 2.227686,1.9845721 1.627533,6.3375811 1.591946,9.6556211 1.173433,-1.539292 2.766863,-4.52136 4.776025,-6.829475 1.807505,-2.076882 4.151034,-4.5474992 6.526999,-5.0242201 5.810633,-1.1658467 7.530098,4.2601501 6.686213,10.1005371 z"
+     fill="currentColor"
+     id="path1"
+     style="stroke-width:1.84066" />
+</svg>
